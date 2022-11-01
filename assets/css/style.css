@@ -1,0 +1,222 @@
+/* section heroImg css */
+.heroImg{
+	padding:60px 0 150px 0;
+	background-color:#fcdb00;
+}
+
+.logo{
+	display:inline-block;
+	height:48px;
+}
+
+.mb-70{
+	margin-bottom:70px;
+}
+
+
+.navbar li a{
+	text-transform:capitalize;
+	font-size:22px;
+	font-weight:bold;
+	color:#010101;
+	height:48px;
+	display:inline-block;
+	line-height:48px;
+}
+
+.navbar li{
+	padding:0 18px;
+	margin-right:35px;
+}
+
+.navbar li:last-child{
+	margin-right:0;
+}
+
+.ipad{
+	margin-left:40px;
+}
+
+.inspire{
+	padding-top:70px;
+}
+
+.pri-heading{
+	font-size:32px;
+	color:#010101;
+	margin-bottom:22px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.sec-heading{
+	font-size:20px;
+	font-weight:400;
+	color:#313841;
+	margin-bottom:22px;
+}
+
+.para{
+	text-align:justify;
+	font-size:16px;
+	color:#555555;
+	margin-bottom:40px;
+}
+
+.brandlink li,.brandlink,.brandlink li a{
+	display:inline-block;
+}
+
+.brandlink li{
+	margin-right:40px;
+}
+
+.brandlink li i{
+	font-size:40px;
+	color:#010101;
+}
+
+
+/* .............................Features section css.......................................... */
+
+.features{
+	padding:120px 0 70px;
+}
+
+.thumbnail{
+	margin-bottom:90px;
+}
+
+.thumbHeading{
+	color:#010101;
+	font-weight:bold;
+	font-size:22px;
+	margin-bottom:15px;
+}
+
+.thumbPara{
+	font-size:16px;
+	color:#898989;
+}
+
+.thumbIcon i{
+	font-size:42px;
+}
+
+/* .............................Footer section css.......................................... */
+
+.footer{
+	padding:95px 0 140px;
+	background-color:#010101;
+}
+
+.footer .pri-heading{
+	color:#fcdb00;
+}
+
+.footer .sec-heading{
+	color:#898989;
+	margin-bottom:40px;
+}
+
+.btn-primary{
+	height:50px;
+	background-color:#fcdb00;
+	width:125px;
+	margin-left:20px;
+	cursor:pointer;
+	border-radius:5px;
+	text-transform:uppercase;
+	color:#010101;
+	font-size:16px;
+	font-weight:bold;
+	border:1px solid #fcdb00;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active{
+	color:#fcdb00;
+	background-color:#010101;
+}
+
+.for-control{
+	height:50px;
+	border:0;
+	border-radius:5px;
+	width: calc(100% - 150px);
+	padding:0 25px;
+	outline:none;
+}
+
+.form-control::placeholder{
+	color:#898989;
+	font-size:16px;
+}
+
+.form-group{
+	margin-bottom:80px;
+}
+
+.socialIcons{
+	margin-bottom:135px;
+}
+
+.socialIcons li{
+	display:inline-block;
+	margin-right:30px;
+}
+
+.socialIcons li i{
+	font-size:35px;
+	color:#fcdb00;
+	border-radius:50%;
+}
+
+.address a,
+.address{
+	font-size:16px;
+	color:#ffffff;
+	line-height:1.5;
+}
+
+
+
+
+
+
+
+
+/* Notes:
+			(A)TIPS:
+					(i)Before doing any layout first thing we should have to do is analyse the layout.
+
+			(B)ANAYSIS:
+			
+					(i)First find the "How many section are in this layout?".When we find the answer make whatever section we got in the notepad/VScode.
+					
+					(ii)Then find the "Is the 'content' in layout is in the fixed width or taking full size of the viewport?".If it is in the fixed width then make the container of that width. 
+					
+					(iii)Then analyse every section by "how many grid does the every content consume?"."How many headings are there in the section and their type?"
+					
+					(iv)Then analyse the row and the columns content.
+					"How many grids/columns content have used?"."How many rows are there?".For every section.
+					
+					(v)Before writing the html code write the comments before the every section what type of section is this.(ex: header section,footer section,main section)
+					
+			(C)Code Writing:
+					
+					(i)Create the container,row in that section.
+
+					(ii)Write down the helper css.
+					
+					(iii)Calculate the top and bottom inner space (i.e padding of that section) for that section 
+
+
+
+
+
+
+
+
+
+ */
