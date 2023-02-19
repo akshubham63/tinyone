@@ -1,222 +1,239 @@
-/* section heroImg css */
-.heroImg{
-	padding:60px 0 150px 0;
-	background-color:#fcdb00;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
 }
 
-.logo{
-	display:inline-block;
-	height:48px;
+/*############################### header section css #######################################*/
+
+ .headerSection{
+    padding: 100px 0;
+    background-color: #fcdb00;
 }
 
-.mb-70{
-	margin-bottom:70px;
+.headerSection .navbar-default {
+    background: transparent;
+    border: 0;
+}
+
+.headerSection .navbar-brand {
+    padding: 0 15px;
+}
+
+.headerSection .navbar-brand img{
+    height: 100%;
+}
+
+.headerSection .navbar-default .navbar-nav>li>a::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #b5ab51;
+    transition: all 0.7s linear;
+}
+
+.headerSection .navbar-default .navbar-nav>li>a:hover:after,
+.headerSection .navbar-default .navbar-nav>li>a:active:after,
+.headerSection .navbar-default .navbar-nav>li>a:focus:after{
+    width: 100%;
+}
+
+.headerSection .navbar-default .navbar-nav>li>a{
+    color: #010101;
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-left: 70px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.headerSection .headerInfo{
+    margin-top: 70px;
+}
+
+.headerSection .linkIcons li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.headerSection .linkIcons li a{
+    color: #010101;
+}
+
+.headerSection .ipadImg{
+    max-width: 100%;
+}
+
+/*############################### feature section css #################################*/
+
+.featuresSection{
+    padding: 100px 0 10px;
+}
+
+.featuresSection .thumbnail{
+    padding: 20px 20px;
+}
+
+.featuresSection .thumbnail .sec-heading{
+    color: #010101;
+    font-weight: 700;
+}
+
+.featuresSection .thumbnail .para{
+    margin: 0;
+}
+
+/*############################### footer section css #################################*/
+
+.footerSection{
+    padding: 100px 0;
+    background-color: #010101;
+}
+.footerSection .pri-heading{
+    color: #fbdb00;
+}
+
+.footerSection .sec-heading{
+    margin-bottom: 40px;
+    color: #898989;
+}
+
+.footerSection .input-group {
+    width: 100%;
+}
+
+.input-group .form-control:last-child {
+   border-radius: 5px;
+}
+
+.footerSection .btn-lg {
+    width: 100%;
+    background: #fbdb00;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.footerSection .linkIcons li,
+.footerSection .linkIcons li a{
+    display: inline-block;
+}
+
+.footerSection .linkIcons li {
+    margin-right: 40px;
+}
+
+.footerSection .linkIcons li a{
+    color: #fcdb00;
+}
+
+.footerSection .footerInfo [class^="col-"] {
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.footerSection a,
+.footerSection a:focus,
+.footerSection a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ..........................................media query........................................ */
+
+@media all and (max-width: 992px){
+    .headerSection .navbar-default .navbar-nav>li>a {
+        margin-left: 10px;
+    }
+}
+
+@media all and (max-width:768px){
+    .headerSection{
+        padding: 100px 10px;
+    }
+
+    .headerSection .container:first-child .row{
+        margin-bottom: 0;
+    }
+
+    .headerSection .linkIcons{
+        margin-bottom: 30px;
+    }
+
+    .headerSection .linkIcons li {
+        margin-right: 30px;
+    }
+
+    .headerSection .navbar-brand {
+        padding: 0 0px;
+    }
+
+    .headerSection .navbar-brand img {
+        height: 85%;
+    }
+
+    .headerSection .navbar-default .navbar-toggle:focus, 
+    .headerSection .navbar-default .navbar-toggle:hover {
+        background-color: #000;
+    }
+
+    .headerSection .navbar-default .navbar-toggle:focus span, 
+    .headerSection .navbar-default .navbar-toggle:hover span {
+        background-color: #fff;
+    }
+
+    .headerSection .headerInfo {
+        margin-top: 20px;
+    }
+   
+    .headerSection .navbar-default .navbar-nav>li:hover,
+    .headerSection .navbar-default .navbar-nav>li:active,
+    .headerSection .navbar-default .navbar-nav>li:focus{
+       background-color: #b5ab51;
+    }
+
+    .headerSection .navbar-default .navbar-nav>li>a:hover:after,
+    .headerSection .navbar-default .navbar-nav>li>a:active:after,
+    .headerSection .navbar-default .navbar-nav>li>a:focus:after{
+        width: 0%;
+    }
+
+    .featuresSection .container >:first-child,
+    .featuresSection .container :last-child .thumbnail{
+        margin-bottom: 30px;
+    }
+
+    .pri-heading{
+        font-size: 26px;
+    }
+
+    .sec-heading{
+        font-size: 18px;
+    }
+
+    .featuresSection .thumbnail{
+        text-align: center;
+    }
+
+    .featuresSection .thumbnail i{
+        margin-bottom: 20px;
+    }
+
+    .footerSection{
+        padding: 100px 0 20px;
+    }
+
+    .footerSection .linkIcons li {
+        margin-right: 20px;
+    }
+
+    .footerSection .footerInfo [class^="col-"]{
+        margin-bottom: 20px;
+    }
 }
 
 
-.navbar li a{
-	text-transform:capitalize;
-	font-size:22px;
-	font-weight:bold;
-	color:#010101;
-	height:48px;
-	display:inline-block;
-	line-height:48px;
-}
-
-.navbar li{
-	padding:0 18px;
-	margin-right:35px;
-}
-
-.navbar li:last-child{
-	margin-right:0;
-}
-
-.ipad{
-	margin-left:40px;
-}
-
-.inspire{
-	padding-top:70px;
-}
-
-.pri-heading{
-	font-size:32px;
-	color:#010101;
-	margin-bottom:22px;
-	font-family: 'Poppins', sans-serif;
-}
-
-.sec-heading{
-	font-size:20px;
-	font-weight:400;
-	color:#313841;
-	margin-bottom:22px;
-}
-
-.para{
-	text-align:justify;
-	font-size:16px;
-	color:#555555;
-	margin-bottom:40px;
-}
-
-.brandlink li,.brandlink,.brandlink li a{
-	display:inline-block;
-}
-
-.brandlink li{
-	margin-right:40px;
-}
-
-.brandlink li i{
-	font-size:40px;
-	color:#010101;
-}
-
-
-/* .............................Features section css.......................................... */
-
-.features{
-	padding:120px 0 70px;
-}
-
-.thumbnail{
-	margin-bottom:90px;
-}
-
-.thumbHeading{
-	color:#010101;
-	font-weight:bold;
-	font-size:22px;
-	margin-bottom:15px;
-}
-
-.thumbPara{
-	font-size:16px;
-	color:#898989;
-}
-
-.thumbIcon i{
-	font-size:42px;
-}
-
-/* .............................Footer section css.......................................... */
-
-.footer{
-	padding:95px 0 140px;
-	background-color:#010101;
-}
-
-.footer .pri-heading{
-	color:#fcdb00;
-}
-
-.footer .sec-heading{
-	color:#898989;
-	margin-bottom:40px;
-}
-
-.btn-primary{
-	height:50px;
-	background-color:#fcdb00;
-	width:125px;
-	margin-left:20px;
-	cursor:pointer;
-	border-radius:5px;
-	text-transform:uppercase;
-	color:#010101;
-	font-size:16px;
-	font-weight:bold;
-	border:1px solid #fcdb00;
-}
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active{
-	color:#fcdb00;
-	background-color:#010101;
-}
-
-.for-control{
-	height:50px;
-	border:0;
-	border-radius:5px;
-	width: calc(100% - 150px);
-	padding:0 25px;
-	outline:none;
-}
-
-.form-control::placeholder{
-	color:#898989;
-	font-size:16px;
-}
-
-.form-group{
-	margin-bottom:80px;
-}
-
-.socialIcons{
-	margin-bottom:135px;
-}
-
-.socialIcons li{
-	display:inline-block;
-	margin-right:30px;
-}
-
-.socialIcons li i{
-	font-size:35px;
-	color:#fcdb00;
-	border-radius:50%;
-}
-
-.address a,
-.address{
-	font-size:16px;
-	color:#ffffff;
-	line-height:1.5;
-}
-
-
-
-
-
-
-
-
-/* Notes:
-			(A)TIPS:
-					(i)Before doing any layout first thing we should have to do is analyse the layout.
-
-			(B)ANAYSIS:
-			
-					(i)First find the "How many section are in this layout?".When we find the answer make whatever section we got in the notepad/VScode.
-					
-					(ii)Then find the "Is the 'content' in layout is in the fixed width or taking full size of the viewport?".If it is in the fixed width then make the container of that width. 
-					
-					(iii)Then analyse every section by "how many grid does the every content consume?"."How many headings are there in the section and their type?"
-					
-					(iv)Then analyse the row and the columns content.
-					"How many grids/columns content have used?"."How many rows are there?".For every section.
-					
-					(v)Before writing the html code write the comments before the every section what type of section is this.(ex: header section,footer section,main section)
-					
-			(C)Code Writing:
-					
-					(i)Create the container,row in that section.
-
-					(ii)Write down the helper css.
-					
-					(iii)Calculate the top and bottom inner space (i.e padding of that section) for that section 
-
-
-
-
-
-
-
-
-
- */
